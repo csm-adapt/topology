@@ -2,7 +2,7 @@
 """
 Synopsis
 --------
-Writes a :code:`topopropy.Map` object to a file in the
+Writes a :code:`topology.distance.Map` object to a file in the
 VASP CHGCAR format.
 
 @author: Branden Kappes

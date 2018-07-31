@@ -8,7 +8,7 @@ Reads a CHGCAR-formatted file into a StructuredGrid object.
 @date: 2013 July 28
 """
 
-from topopropy.grid import StructuredGrid
+from topology.distance.grid import StructuredGrid
 from operator import mul
 import sys
 
@@ -20,7 +20,7 @@ import sys
 def read_chgcar_into_grid(ifs, obj):
     """
     Reads CHGCAR-formatted data from the input filestream
-    into the topopropy.StructuredGrid object.
+    into the topology.distance.StructuredGrid object.
     """
     if not isinstance(obj, StructuredGrid):
         msg = 'Type mimatch while reading from {:s}.'.format(ifs.name)
@@ -90,7 +90,7 @@ def read_chgcar_into_grid(ifs, obj):
             lineno += 1
     except:
         msg = 'ERROR: An error occured while reading {:s} '\
-                'into a topopropy StructuredGrid'.format(ifs.name)
+                'into a topology.distance StructuredGrid'.format(ifs.name)
         print >> sys.stderr, msg
         raise
     # close file, if opened

@@ -6,7 +6,7 @@ the 3**dim-1 neighboring hypercubes), as a single component.
 """
 
 from bitarray import bitarray
-from topopropy.grid import StructuredGrid
+from topology.distance.grid import StructuredGrid
 from operator import gt, ne
 import numpy as np
 import sys

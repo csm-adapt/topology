@@ -2,17 +2,17 @@
 """
 Synopsis
 --------
-Entry point for all topopropy read operations
+Entry point for all topology.distance read operations
 
 @author: Branden Kappes
 @date: 2013 July 28
 """
 
-from topopropy.grid import StructuredGrid
-from topopropy.map import MapBase
-from topopropy.io.guess_format import guess_format
-from topopropy.io.read_chgcar_into_grid import read_chgcar_into_grid
-from topopropy.io.read_chgcar_into_map import read_chgcar_into_map
+from topology.distance.grid import StructuredGrid
+from topology.distance.map import MapBase
+from topology.distance.io.guess_format import guess_format
+from topology.distance.io.read_chgcar_into_grid import read_chgcar_into_grid
+from topology.distance.io.read_chgcar_into_map import read_chgcar_into_map
 
 
 def read(ifs, obj, fmt=None):

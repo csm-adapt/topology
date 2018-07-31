@@ -8,9 +8,9 @@ Frontend for all output operations.
 @date: 2013 July 28
 """
 
-from topopropy.io.guess_format import guess_format
-from topopropy.map import MapBase
-from topopropy.io.write_map_to_chgcar import write_map_to_chgcar
+from topology.distance.io.guess_format import guess_format
+from topology.distance.map import MapBase
+from topology.distance.io.write_map_to_chgcar import write_map_to_chgcar
 
 
 def write(ofs, obj, fmt=None):

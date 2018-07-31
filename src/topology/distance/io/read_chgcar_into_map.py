@@ -8,7 +8,7 @@ Reads the VASP CHGCAR-formatted file object into a Map.
 @date: 2013 July 28
 """
 
-from topopropy.map import MapBase
+from topology.distance.map import MapBase
 from ase.atoms import Atoms
 from ase.data import chemical_symbols
 from operator import mul
@@ -24,7 +24,7 @@ def read_chgcar_into_map(ifs, obj):
     Synopsis
     --------
     Reads CHGCAR-formatted data from the input filestream
-    into a topopropy Map-like object.
+    into a topology.distance Map-like object.
 
     Parameters
     ----------
@@ -121,7 +121,7 @@ def read_chgcar_into_map(ifs, obj):
             lineno += 1
     except:
         msg = 'ERROR: An error occured while reading {:s} ' \
-              'into a topopropy Map'.format(ifs.name)
+              'into a topology.distance Map'.format(ifs.name)
         print >> sys.stderr, msg
         raise
     # close file, if opened

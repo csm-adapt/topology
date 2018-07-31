@@ -14,7 +14,7 @@ import warnings
 
 from ase.atoms import Atoms
 from ase.data import covalent_radii, chemical_symbols, vdw_radii
-from topopropy.grid import StructuredGrid
+from topology.distance.grid import StructuredGrid
 from operator import mul
 from scipy.spatial import cKDTree  # pylint: disable=E0611
 
